@@ -1,0 +1,267 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title "WiFi"
+Date "2021-03-03"
+Rev "1.0"
+Comp "Crédito DyM de PCBs"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP-12F U9
+U 1 1 6047C0A8
+P 5700 4800
+F 0 "U9" H 5350 5700 50  0000 C CNN
+F 1 "ESP-12F" H 5400 5600 50  0000 C CNN
+F 2 "RF_Module:ESP-12E" H 5700 4800 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 5350 4900 50  0001 C CNN
+	1    5700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR034
+U 1 1 6047D84D
+P 5700 3950
+F 0 "#PWR034" H 5700 3800 50  0001 C CNN
+F 1 "+3.3V" H 5715 4123 50  0000 C CNN
+F 2 "" H 5700 3950 50  0001 C CNN
+F 3 "" H 5700 3950 50  0001 C CNN
+	1    5700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR035
+U 1 1 6047EA4B
+P 5700 5550
+F 0 "#PWR035" H 5700 5300 50  0001 C CNN
+F 1 "GNDREF" H 5705 5377 50  0000 C CNN
+F 2 "" H 5700 5550 50  0001 C CNN
+F 3 "" H 5700 5550 50  0001 C CNN
+	1    5700 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4000 5700 3950
+Wire Wire Line
+	5700 5550 5700 5500
+Wire Wire Line
+	5100 4400 4550 4400
+Wire Wire Line
+	6300 5100 6450 5100
+$Comp
+L power:GNDREF #PWR036
+U 1 1 6047FB4E
+P 6450 5150
+F 0 "#PWR036" H 6450 4900 50  0001 C CNN
+F 1 "GNDREF" H 6455 4977 50  0000 C CNN
+F 2 "" H 6450 5150 50  0001 C CNN
+F 3 "" H 6450 5150 50  0001 C CNN
+	1    6450 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5150 6450 5100
+Text Label 4550 4400 0    50   ~ 0
+RST
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60495F55
+P 4500 2200
+AR Path="/60476BA2/60495F55" Ref="#PWR?"  Part="1" 
+AR Path="/605B052B/60495F55" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 4500 2050 50  0001 C CNN
+F 1 "+3.3V" H 4515 2373 50  0000 C CNN
+F 2 "" H 4500 2200 50  0001 C CNN
+F 3 "" H 4500 2200 50  0001 C CNN
+	1    4500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60495F5B
+P 4500 2800
+AR Path="/60476BA2/60495F5B" Ref="C?"  Part="1" 
+AR Path="/605B052B/60495F5B" Ref="C3"  Part="1" 
+F 0 "C3" H 4615 2846 50  0000 L CNN
+F 1 "100nF" H 4615 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4538 2650 50  0001 C CNN
+F 3 "~" H 4500 2800 50  0001 C CNN
+	1    4500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 60495F61
+P 4150 2600
+AR Path="/60476BA2/60495F61" Ref="SW?"  Part="1" 
+AR Path="/605B052B/60495F61" Ref="SW1"  Part="1" 
+F 0 "SW1" H 4150 2885 50  0000 C CNN
+F 1 "RESET" H 4150 2794 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_CK_RS282G05A3" H 4150 2800 50  0001 C CNN
+F 3 "~" H 4150 2800 50  0001 C CNN
+	1    4150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60495F67
+P 4500 2400
+AR Path="/60476BA2/60495F67" Ref="R?"  Part="1" 
+AR Path="/605B052B/60495F67" Ref="R13"  Part="1" 
+F 0 "R13" H 4570 2446 50  0000 L CNN
+F 1 "10k" H 4570 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4430 2400 50  0001 C CNN
+F 3 "~" H 4500 2400 50  0001 C CNN
+	1    4500 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2650 3900 2600
+Wire Wire Line
+	3900 2600 3950 2600
+Wire Wire Line
+	4500 2600 4500 2550
+Wire Wire Line
+	4500 2650 4500 2600
+Connection ~ 4500 2600
+Wire Wire Line
+	4500 3000 4500 2950
+Wire Wire Line
+	4500 2250 4500 2200
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60495F76
+P 3900 2650
+AR Path="/60476BA2/60495F76" Ref="#PWR?"  Part="1" 
+AR Path="/605B052B/60495F76" Ref="#PWR031"  Part="1" 
+F 0 "#PWR031" H 3900 2400 50  0001 C CNN
+F 1 "GNDREF" H 3905 2477 50  0000 C CNN
+F 2 "" H 3900 2650 50  0001 C CNN
+F 3 "" H 3900 2650 50  0001 C CNN
+	1    3900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60495F7C
+P 4500 3000
+AR Path="/60476BA2/60495F7C" Ref="#PWR?"  Part="1" 
+AR Path="/605B052B/60495F7C" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 4500 2750 50  0001 C CNN
+F 1 "GNDREF" H 4505 2827 50  0000 C CNN
+F 2 "" H 4500 3000 50  0001 C CNN
+F 3 "" H 4500 3000 50  0001 C CNN
+	1    4500 3000
+	1    0    0    -1  
+$EndComp
+Text Label 5500 2500 2    50   ~ 0
+RST
+Wire Notes Line width 10
+	5600 3250 3700 3250
+Wire Notes Line width 10
+	3700 3250 3700 1900
+Wire Notes Line width 10
+	3700 1900 5600 1900
+Wire Notes Line width 10
+	5600 1900 5600 3250
+Text Notes 4100 1850 0    157  ~ 0
+Reset
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 6049AB82
+P 7250 2800
+F 0 "J3" H 7330 2842 50  0000 L CNN
+F 1 "Flash enable" H 7330 2751 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7250 2800 50  0001 C CNN
+F 3 "~" H 7250 2800 50  0001 C CNN
+	1    7250 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR038
+U 1 1 6049C2B8
+P 7000 2950
+F 0 "#PWR038" H 7000 2700 50  0001 C CNN
+F 1 "GNDREF" H 7005 2777 50  0000 C CNN
+F 2 "" H 7000 2950 50  0001 C CNN
+F 3 "" H 7000 2950 50  0001 C CNN
+	1    7000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR037
+U 1 1 6049CB44
+P 7000 2650
+F 0 "#PWR037" H 7000 2500 50  0001 C CNN
+F 1 "+3.3V" H 7015 2823 50  0000 C CNN
+F 2 "" H 7000 2650 50  0001 C CNN
+F 3 "" H 7000 2650 50  0001 C CNN
+	1    7000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2700 7000 2700
+Wire Wire Line
+	7000 2700 7000 2650
+Wire Wire Line
+	7000 2950 7000 2900
+Wire Wire Line
+	7000 2900 7050 2900
+Wire Wire Line
+	6150 2800 7050 2800
+Text Label 6150 2800 0    50   ~ 0
+ESP_FLASH_ENABLE
+Text Notes 5200 3550 0    157  ~ 0
+Modulo WiFi
+Text Notes 6200 2350 0    157  ~ 0
+Flash enable
+Wire Notes Line width 10
+	4450 5900 7250 5900
+Wire Notes Line width 10
+	7250 3600 4450 3600
+Wire Notes Line width 10
+	4450 3600 4450 5900
+Wire Notes Line width 10
+	6100 3250 6100 2400
+Wire Notes Line width 10
+	6100 2400 7850 2400
+Wire Notes Line width 10
+	7850 2400 7850 3250
+Wire Notes Line width 10
+	6100 3250 7850 3250
+Wire Wire Line
+	4350 2600 4500 2600
+Wire Wire Line
+	4500 2600 4750 2600
+Wire Wire Line
+	4750 2600 4750 2500
+Wire Wire Line
+	4750 2500 5500 2500
+Wire Wire Line
+	4750 2600 4750 2700
+Wire Wire Line
+	4750 2700 4850 2700
+Connection ~ 4750 2600
+Text GLabel 4850 2700 2    50   Input ~ 0
+ESP_SOFT_RESET
+Text GLabel 6450 4300 2    50   Output ~ 0
+UART_RX
+Text GLabel 6450 4500 2    50   Input ~ 0
+UART_TX
+Wire Notes Line width 10
+	7250 5900 7250 3600
+Text Label 7150 4200 2    50   ~ 0
+ESP_FLASH_ENABLE
+Wire Wire Line
+	6300 4500 6450 4500
+Wire Wire Line
+	6300 4300 6450 4300
+Wire Wire Line
+	6300 4200 7150 4200
+$EndSCHEMATC

@@ -1,0 +1,244 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title "Puente H"
+Date "2021-03-03"
+Rev "1.0"
+Comp "Crédito DyM de PCBs"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR027
+U 1 1 6043E356
+P 5200 2950
+F 0 "#PWR027" H 5200 2800 50  0001 C CNN
+F 1 "+5V" H 5215 3123 50  0000 C CNN
+F 2 "" H 5200 2950 50  0001 C CNN
+F 3 "" H 5200 2950 50  0001 C CNN
+	1    5200 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4750 5250 4750
+Wire Wire Line
+	5250 4650 5200 4650
+Wire Wire Line
+	5200 4650 5200 4550
+Wire Wire Line
+	5200 4550 5250 4550
+Connection ~ 5200 4550
+Wire Wire Line
+	5200 3450 5200 3350
+Wire Wire Line
+	5200 2950 5200 3000
+Connection ~ 5200 3350
+Wire Wire Line
+	6000 3550 6000 3650
+Wire Wire Line
+	5950 4450 6000 4450
+Wire Wire Line
+	6000 4750 5950 4750
+Wire Wire Line
+	6000 4800 6000 4750
+Connection ~ 6000 4750
+Connection ~ 6000 3550
+Wire Wire Line
+	6000 3250 6000 3550
+Wire Wire Line
+	6000 4450 6000 4750
+Wire Wire Line
+	5950 4550 6150 4550
+Wire Wire Line
+	5950 4650 6150 4650
+Text GLabel 6150 4650 2    50   Input ~ 0
+MOTDA
+Text GLabel 6150 4550 2    50   Input ~ 0
+MOTDB
+Text GLabel 6150 3350 2    50   Input ~ 0
+MOTIB
+Text GLabel 6150 3450 2    50   Input ~ 0
+MOTIA
+$Comp
+L Mis_componentes:L9110 U8
+U 1 1 6041FEF1
+P 5600 4900
+F 0 "U8" H 5600 5615 50  0000 C CNN
+F 1 "L9110" H 5600 5524 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5600 4900 50  0001 C CNN
+F 3 "" H 5600 4900 50  0001 C CNN
+	1    5600 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR029
+U 1 1 60431AED
+P 6000 3650
+F 0 "#PWR029" H 6000 3400 50  0001 C CNN
+F 1 "GNDREF" H 6005 3477 50  0000 C CNN
+F 2 "" H 6000 3650 50  0001 C CNN
+F 3 "" H 6000 3650 50  0001 C CNN
+	1    6000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR030
+U 1 1 60431FB6
+P 6000 4800
+F 0 "#PWR030" H 6000 4550 50  0001 C CNN
+F 1 "GNDREF" H 6005 4627 50  0000 C CNN
+F 2 "" H 6000 4800 50  0001 C CNN
+F 3 "" H 6000 4800 50  0001 C CNN
+	1    6000 4800
+	1    0    0    -1  
+$EndComp
+Wire Notes Line width 10
+	6550 5050 4500 5050
+Wire Notes Line width 10
+	4500 5050 4500 2650
+Wire Notes Line width 10
+	4500 2650 6550 2650
+Wire Notes Line width 10
+	6550 2650 6550 5050
+Text Notes 4050 2400 0    157  ~ 0
+Dirección de Motores
+$Comp
+L Device:CP C1
+U 1 1 604D3C31
+P 4950 3000
+F 0 "C1" V 4695 3000 50  0000 C CNN
+F 1 "22uF" V 4786 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x9.9" H 4988 2850 50  0001 C CNN
+F 3 "~" H 4950 3000 50  0001 C CNN
+	1    4950 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR028
+U 1 1 6043DEAE
+P 5200 3950
+F 0 "#PWR028" H 5200 3800 50  0001 C CNN
+F 1 "+5V" H 5215 4123 50  0000 C CNN
+F 2 "" H 5200 3950 50  0001 C CNN
+F 3 "" H 5200 3950 50  0001 C CNN
+	1    5200 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR025
+U 1 1 604DDB80
+P 4750 3050
+F 0 "#PWR025" H 4750 2800 50  0001 C CNN
+F 1 "GNDREF" H 4755 2877 50  0000 C CNN
+F 2 "" H 4750 3050 50  0001 C CNN
+F 3 "" H 4750 3050 50  0001 C CNN
+	1    4750 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR026
+U 1 1 604DE047
+P 4800 4050
+F 0 "#PWR026" H 4800 3800 50  0001 C CNN
+F 1 "GNDREF" H 4805 3877 50  0000 C CNN
+F 2 "" H 4800 4050 50  0001 C CNN
+F 3 "" H 4800 4050 50  0001 C CNN
+	1    4800 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4000 5200 4550
+Wire Wire Line
+	4800 4000 4800 4050
+Wire Wire Line
+	4800 4000 4850 4000
+Wire Wire Line
+	5150 4000 5200 4000
+Wire Wire Line
+	5200 3950 5200 4000
+Connection ~ 5200 4000
+Wire Wire Line
+	5100 3000 5200 3000
+Connection ~ 5200 3000
+Wire Wire Line
+	5200 3000 5200 3350
+Wire Wire Line
+	4800 3000 4750 3000
+Wire Wire Line
+	4750 3000 4750 3050
+Wire Wire Line
+	5950 3250 6000 3250
+Wire Wire Line
+	5950 3350 6150 3350
+Wire Wire Line
+	5950 3450 6150 3450
+Wire Wire Line
+	5950 3550 6000 3550
+Wire Wire Line
+	5250 3450 5200 3450
+Wire Wire Line
+	5200 3350 5250 3350
+Wire Wire Line
+	5100 3250 5250 3250
+$Comp
+L Mis_componentes:L9110 U7
+U 1 1 6041F65F
+P 5600 3700
+F 0 "U7" H 5600 4415 50  0000 C CNN
+F 1 "L9110" H 5600 4324 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5600 3700 50  0001 C CNN
+F 3 "" H 5600 3700 50  0001 C CNN
+	1    5600 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3450 5100 3250
+Wire Wire Line
+	5050 4450 5250 4450
+Wire Wire Line
+	5100 4550 5100 4750
+Wire Wire Line
+	5050 4550 5100 4550
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 6043D24F
+P 4850 4550
+F 0 "J2" H 4850 4700 50  0000 C CNN
+F 1 "Motor derecha" H 4850 4350 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 4850 4550 50  0001 C CNN
+F 3 "~" H 4850 4550 50  0001 C CNN
+	1    4850 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 6043CC3C
+P 4850 3450
+F 0 "J1" H 4850 3250 50  0000 C CNN
+F 1 "Motor izquierda" H 4900 3550 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 4850 3450 50  0001 C CNN
+F 3 "~" H 4850 3450 50  0001 C CNN
+	1    4850 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 604DF260
+P 5000 4000
+F 0 "C2" V 4745 4000 50  0000 C CNN
+F 1 "22uF" V 4836 4000 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x9.9" H 5038 3850 50  0001 C CNN
+F 3 "~" H 5000 4000 50  0001 C CNN
+	1    5000 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 3450 5050 3450
+Wire Wire Line
+	5050 3550 5250 3550
+$EndSCHEMATC
