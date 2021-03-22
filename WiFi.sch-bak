@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 7
 Title "WiFi"
 Date "2021-03-03"
 Rev "1.0"
@@ -246,10 +246,10 @@ Wire Wire Line
 Wire Wire Line
 	4750 2600 4750 2700
 Wire Wire Line
-	4750 2700 4850 2700
+	4750 2700 4900 2700
 Connection ~ 4750 2600
-Text GLabel 4850 2700 2    50   Input ~ 0
-ESP_SOFT_RESET
+Text GLabel 4900 2700 2    50   Input ~ 0
+ESP_SOFT_RST
 Text GLabel 6450 4300 2    50   Output ~ 0
 UART_RX
 Text GLabel 6450 4500 2    50   Input ~ 0
