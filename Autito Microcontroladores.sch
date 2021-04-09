@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 7
-Title ""
-Date "2021-03-03"
-Rev "1.0"
+Title "Hoja raíz"
+Date "2021-03-30"
+Rev ""
 Comp "Crédito DyM de PCBs"
 Comment1 ""
 Comment2 ""
@@ -100,7 +100,7 @@ F1 "Alimentacion.sch" 50
 F2 "BAT+" O R 5000 4450 50 
 $EndSheet
 $Sheet
-S 5100 2150 1750 800 
+S 5650 2550 600  400 
 U 605BE0A9
 F0 "Sujeciones" 50
 F1 "Sujeciones.sch" 50
