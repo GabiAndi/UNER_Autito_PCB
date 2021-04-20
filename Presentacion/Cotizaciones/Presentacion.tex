@@ -1,0 +1,79 @@
+% Tipo de documento
+\documentclass[12pt]{article}
+
+% Configuracion de paquetes
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb, amsfonts, latexsym, cancel}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{bm}
+\usepackage[lmargin=2cm, rmargin=2cm, top=2.5cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{outlines}
+
+% Configuracion de links
+\hypersetup
+{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=blue,      
+    urlcolor=blue,
+}
+
+% Configuracion de pagina
+\parindent=0.5cm
+
+% Modo de inicio y pie de pagina
+\pagestyle{fancy}
+
+\fancyhead{}
+\fancyhead[C]{Autito Microcontroladores}
+\fancyhead[R]{\includegraphics[scale=0.06]{src/institucion/Logo_uner-434x331.png}}
+\renewcommand{\headrulewidth}{0.9pt}
+
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+\fancyfoot[L]{Gabriel Andrés Aguirre}
+\renewcommand{\footrulewidth}{0.5pt}
+
+% Inicio del documento
+\begin{document}
+
+% Inicio de la caratula
+\begin{titlepage}
+\begin{center}
+% Nombre de la institucion
+\vspace*{2\baselineskip}
+\hrule height 3pt
+\vspace*{0.5\baselineskip}
+{\Huge \textbf{Facultad de Ciencias de la Alimentación}}\\
+[0.1cm]
+{\large \textbf{Universidad Nacional de Entre Ríos}}
+\vspace*{0.5\baselineskip}
+\hrule
+% Logo de la facultad
+\vspace*{10\baselineskip}
+\includegraphics[scale=0.35]{src/institucion/Logo_fcal-1174x247.png}
+\vspace*{2\baselineskip}
+% Nombre del trabajo y tipo
+\textbf{\\AUTITO MICROCONTROLADORES\\}
+\textbf{Crédito de diseño y manufactura de PCB}
+% Nombre de los integrantes y fecha
+\vfill
+GABRIEL ANDRÉS AGUIRRE \\
+\today
+\end{center}
+\end{titlepage}
+
+\end{document}
